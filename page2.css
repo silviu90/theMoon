@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,900&display=swap');
+html,body{
+   scroll-behavior: smooth;
+   height: 100%;
+}
+@media (max-width: 660px) {
+   #mainpgt{
+     font-size: 10px;
+     margin-bottom: 200px;
+     z-index: 2;
+   }
+   section{
+     height: 80vh;
+     z-index: 3;
+   }
+   #moon{
+     height: auto;
+     width: 400px;
+     object-fit: cover;
+   }
+   section img{
+      object-fit: cover;
+   }
+   #head_main1{
+      font-size: 19px;
+   }
+   #earth_moon{
+      object-fit: cover;
+   }
+}
+
+*
+{
+   margin:0;
+   padding:0;
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+}
+
+body, html {
+   background-color: #0a2a43;
+   color: #fff;
+   overflow: hidden;
+}
+canvas {
+   position:absolute;
+   top:0;
+   left:0;
+   z-index:1;
+}
+section{
+   position: relative;
+   width:100%;
+   height:100vh;
+   overflow:hidden;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   background-size: cover;
+}
+
+section img{
+   position: absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   object-fit: center;
+   pointer-events: none;
+   display: flex;
+
+}
+#mainpgt{
+   position: relative;
+   color: #ffffff;
+   font-size: 8em;
+   z-index: 2;
+   display: flex;
+}
+#road{
+   z-index: 3;
+   display: flex;
+}
+
+.bottom{
+   justify-content: center;
+   display:inline-block;
+   display: flex;
+}
+
+.container1{
+   background-image: url("img/FullMoon2010.jpg");
+   background-size: cover;
+   background-position: center;
+   display: flex;
+}
+.container2{
+   background-color: #0a2a43;
+   display: flex;
+}
+#head_main0{
+   padding-top: 30px;
+   padding-left: 50px;
+   padding-right: 30px;
+   padding-bottom: 30px;
+   color: #ffffff;
+   display: block;
+   text-align: center;
+}
+#head_main1{
+   padding-top: 10px;
+   padding-left: 15px;
+   padding-right: 30px;
+   color: #ffffff;
+   display: block;
+}
+#text_main{
+   padding-top: 15px;
+   font-size: 20px;
+   font-weight: 560;
+   color: #ffffff;
+   display: inline-block;
+   background-color: transparent;
+}
+#head_main{
+   padding-top: 15px;
+   padding-left: 15px;
+   padding-right: 15px;
+   color: #ffffff;
+   display: inline-block;
+}
+
+.footer{
+   width: 100%;
+   background-color: black;
+   height: 200px;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Roboto', sans-serif;
+   text-align: center;
+   z-index: 10;
+}
+.footer p {
+   padding: 0.3rem;
+   font-size: 14px;
+}
+.contact a{
+   color: white;
+   font-size: 30px;
+   padding: 0.3rem 0.5rem;
+   transition: 0.3s;
+}
+.contact a:hover{
+   color: rgb(128, 128, 128);
+   transform: scale(0.2); 
+}
